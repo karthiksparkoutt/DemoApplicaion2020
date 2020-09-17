@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--COVID_DATA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoCovid" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,48 +15,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7VK-ex-j8r">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7VK-ex-j8r">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="58" id="rah-M7-L5H" customClass="CategoryTableViewCell" customModule="DemoCovid" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="58"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="131" id="rah-M7-L5H" customClass="CategoryTableViewCell" customModule="DemoCovid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rah-M7-L5H" id="JNj-Jr-GV3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAY-6f-1W5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state = AK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyk-4v-ZU0">
+                                                    <rect key="frame" x="20" y="20" width="104" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I4F-Vv-uPQ">
+                                                    <rect key="frame" x="177.5" y="10" width="216.5" height="117"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lastUpdateEt = &quot;9/16/2020 11:00&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-YP-AkI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="216.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="positive = 141087" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEU-eg-n00">
+                                                            <rect key="frame" x="0.0" y="25" width="114" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="negative = 899684" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v43-8K-mxc">
+                                                            <rect key="frame" x="0.0" y="50" width="124.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recovered = 2407" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmu-Rb-maT">
+                                                            <rect key="frame" x="0.0" y="75" width="114.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="checkTimeEt = &quot;09/16 07:00&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuF-CX-uhu">
+                                                            <rect key="frame" x="0.0" y="100" width="189.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="KAY-6f-1W5" secondAttribute="trailing" id="01o-SM-zMj"/>
-                                                <constraint firstItem="KAY-6f-1W5" firstAttribute="top" secondItem="JNj-Jr-GV3" secondAttribute="top" id="9lb-vr-wea"/>
-                                                <constraint firstAttribute="bottom" secondItem="KAY-6f-1W5" secondAttribute="bottom" id="YFb-ef-W1x"/>
-                                                <constraint firstItem="KAY-6f-1W5" firstAttribute="leading" secondItem="JNj-Jr-GV3" secondAttribute="leading" id="zUi-Pp-BXh"/>
+                                                <constraint firstItem="I4F-Vv-uPQ" firstAttribute="top" secondItem="JNj-Jr-GV3" secondAttribute="top" constant="10" id="9rO-bq-cd3"/>
+                                                <constraint firstAttribute="trailing" secondItem="I4F-Vv-uPQ" secondAttribute="trailing" constant="20" id="Rcl-Ac-inO"/>
+                                                <constraint firstItem="Uyk-4v-ZU0" firstAttribute="top" secondItem="JNj-Jr-GV3" secondAttribute="top" constant="20" id="S81-ey-iGU"/>
+                                                <constraint firstAttribute="bottom" secondItem="I4F-Vv-uPQ" secondAttribute="bottom" constant="4" id="uuc-Aq-xA2"/>
+                                                <constraint firstItem="Uyk-4v-ZU0" firstAttribute="leading" secondItem="JNj-Jr-GV3" secondAttribute="leading" constant="20" id="wFs-Gy-vBe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryListLabel" destination="KAY-6f-1W5" id="gDb-w6-MWh"/>
+                                            <outlet property="checkTimeLabel" destination="YuF-CX-uhu" id="vOz-JK-cd2"/>
+                                            <outlet property="lastUpdateLabel" destination="WWs-YP-AkI" id="Gy0-YY-tQC"/>
+                                            <outlet property="negativeLabel" destination="v43-8K-mxc" id="XRJ-Tw-lnY"/>
+                                            <outlet property="positiveLabel" destination="ZEU-eg-n00" id="UR1-F4-9sJ"/>
+                                            <outlet property="recoveredLabel" destination="hmu-Rb-maT" id="6Q8-Fv-k5c"/>
+                                            <outlet property="stateListLabel" destination="Uyk-4v-ZU0" id="b3n-dO-bWA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7VK-ex-j8r" secondAttribute="trailing" id="CSP-pn-GBb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7VK-ex-j8r" secondAttribute="bottom" id="WMN-8D-MyG"/>
-                            <constraint firstItem="7VK-ex-j8r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bq5-r2-8xc"/>
-                            <constraint firstItem="7VK-ex-j8r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zQh-aA-9aa"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GgH-S1-rdC"/>
+                    <navigationItem key="navigationItem" title="COVID_DATA" id="GgH-S1-rdC">
+                        <barButtonItem key="leftBarButtonItem" title="LiveStatus" id="OA1-Gn-1fi">
+                            <connections>
+                                <action selector="liveStatusButton:" destination="BYZ-38-t0r" id="nfE-hv-prK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="BarCharts" style="done" id="Seb-MV-LaQ">
+                            <connections>
+                                <action selector="barChartButton:" destination="BYZ-38-t0r" id="eJY-yI-jcx"/>
+                                <segue destination="ieD-aF-1mt" kind="show" id="Ixa-Q6-Brm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="covidListTableView" destination="7VK-ex-j8r" id="B9R-ID-OJu"/>
                     </connections>
@@ -69,14 +117,27 @@
         <scene sceneID="U4u-P6-hN2">
             <objects>
                 <viewController storyboardIdentifier="BarChartViewController" id="ieD-aF-1mt" customClass="BarChartViewController" customModule="DemoCovid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2KR-La-dtf" customClass="BarChartView" customModule="Charts">
+                    <view key="view" contentMode="scaleToFill" id="2KR-La-dtf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-sI-146" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WMM-JZ-crR" firstAttribute="trailing" secondItem="hnV-sI-146" secondAttribute="trailing" id="2VP-b2-76v"/>
+                            <constraint firstItem="hnV-sI-146" firstAttribute="top" secondItem="WMM-JZ-crR" secondAttribute="top" id="GQk-EO-PLo"/>
+                            <constraint firstItem="hnV-sI-146" firstAttribute="leading" secondItem="WMM-JZ-crR" secondAttribute="leading" id="Mj4-1H-WF0"/>
+                            <constraint firstItem="WMM-JZ-crR" firstAttribute="bottom" secondItem="hnV-sI-146" secondAttribute="bottom" id="xrI-M2-7SU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WMM-JZ-crR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SSz-SS-evH"/>
                     <connections>
-                        <outlet property="barChartView" destination="2KR-La-dtf" id="5dZ-i0-uL6"/>
+                        <outlet property="barChartView" destination="hnV-sI-146" id="tj4-v2-ppp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMx-Rt-2ba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

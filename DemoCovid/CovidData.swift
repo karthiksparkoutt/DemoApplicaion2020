@@ -12,16 +12,18 @@ import SwiftyJSON
 
 class CovidData{
     var state : String
-    var date : Int
-    var positive : Int
-    var negative : Int
-    var recovered : Int
+    var checkTimeEt : String
+    var lastUpdateEt : String
+    var positive : String
+    var negative : String
+    var recovered : String
     
 init(covidDataListJson:JSON) {
     self.state = covidDataListJson["state"].stringValue
-    self.date = covidDataListJson["date"].intValue
-    self.positive = covidDataListJson["positive"].intValue
-    self.negative = covidDataListJson["negative"].intValue
-    self.recovered = covidDataListJson["recovered"].intValue
+    self.checkTimeEt = covidDataListJson["checkTimeEt"].stringValue
+    self.lastUpdateEt = covidDataListJson["lastUpdateEt"].stringValue
+    self.positive = covidDataListJson["positive"].stringValue
+    self.negative = covidDataListJson["negative"].stringValue
+    self.recovered = covidDataListJson["recovered"].stringValue
 
     }}

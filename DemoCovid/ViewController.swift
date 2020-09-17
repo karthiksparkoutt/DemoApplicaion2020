@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         extractedFunc()
     }
+    @IBAction func liveStatusButton(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func barChartButton(_ sender: UIBarButtonItem) {
+    }
     func callMyPropertiesService(){
         DispatchQueue.main.async {
             let url = URL(string: "https://covidtracking.com/api/states")
@@ -54,21 +58,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:indexPath) as! CategoryTableViewCell
-        cell.categoryListLabel.text = users[indexPath.row].state
+        cell.stateListLabel.text = "State: "+users[indexPath.row].state
+        cell.checkTimeLabel.text = "checkTimeEt: "+users[indexPath.row].checkTimeEt
+        cell.lastUpdateLabel.text = "lastUpdateEt: "+users[indexPath.row].lastUpdateEt
+        cell.positiveLabel.text = "positive: "+users[indexPath.row].positive
+        cell.negativeLabel.text = "negative: "+users[indexPath.row].negative
+        cell.recoveredLabel.text = "recovered: "+users[indexPath.row].recovered
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 150
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BarChartViewController") as! BarChartViewController
-        self.addChild(popOverVC)
-        popOverVC.getPositive = users[indexPath.row].positive
-        popOverVC.getstate = users[indexPath.row].state
-        // popOverVC.getImage = imageProfile[indexPath.row] as! UIImage
-        // popOverVC.getName = name[indexPath.row] as! String
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParent: self)
-    }
+    
 }
