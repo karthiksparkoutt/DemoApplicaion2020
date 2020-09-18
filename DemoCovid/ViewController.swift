@@ -24,12 +24,15 @@ class ViewController: UIViewController {
     @IBAction func liveStatusButton(_ sender: UIBarButtonItem) {
     }
     @IBAction func barChartButton(_ sender: UIBarButtonItem) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BarChartViewController") as! BarChartViewController
+        vc.dataArray = users
+        self.present(vc, animated: true, completion: nil)
     }
     func callMyPropertiesService(){
         DispatchQueue.main.async {
             let url = URL(string: "https://covidtracking.com/api/states")
             let urlRequest = URLRequest(url: url!)
-            Alamofire.request(urlRequest)
+            AF.request(urlRequest)
                 .responseJSON { response in
                     switch response.result{
                     case.success(let data):
@@ -69,6 +72,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BarChartViewController") as! BarChartViewController
+        vc.getPositive = users[indexPath.row].positive
+        vc.getState = users[indexPath.row].state
+        vc.getNegative = users[indexPath.row].negative
+        self.present(vc, animated: true, completion: nil)
+
     }
     
 }

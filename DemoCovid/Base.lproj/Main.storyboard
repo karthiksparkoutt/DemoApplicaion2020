@@ -101,7 +101,6 @@
                         <barButtonItem key="rightBarButtonItem" title="BarCharts" style="done" id="Seb-MV-LaQ">
                             <connections>
                                 <action selector="barChartButton:" destination="BYZ-38-t0r" id="eJY-yI-jcx"/>
-                                <segue destination="ieD-aF-1mt" kind="show" id="Ixa-Q6-Brm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -122,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-sI-146" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>

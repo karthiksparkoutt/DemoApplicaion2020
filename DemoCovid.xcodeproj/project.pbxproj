@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		150F379DF3593D5723839A0D /* Pods_DemoCovidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCDA70C05887DD1B8472B58 /* Pods_DemoCovidTests.framework */; };
+		3B1471FC2514E8BB0028C1CE /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1471FB2514E8BB0028C1CE /* Charts */; };
+		3B1471FF2514E8FC0028C1CE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1471FE2514E8FC0028C1CE /* SwiftyJSON */; };
+		3B1472022514E9690028C1CE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1472012514E9690028C1CE /* Alamofire */; };
 		3B2839442511EAD700570EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839432511EAD700570EDF /* AppDelegate.swift */; };
 		3B2839462511EAD700570EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839452511EAD700570EDF /* SceneDelegate.swift */; };
 		3B2839482511EAD700570EDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839472511EAD700570EDF /* ViewController.swift */; };
@@ -74,7 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1471FF2514E8FC0028C1CE /* SwiftyJSON in Frameworks */,
+				3B1472022514E9690028C1CE /* Alamofire in Frameworks */,
 				D3E7497660205CFB735CE2EC /* Pods_DemoCovid.framework in Frameworks */,
+				3B1471FC2514E8BB0028C1CE /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,13 +194,17 @@
 				3B28393C2511EAD700570EDF /* Sources */,
 				3B28393D2511EAD700570EDF /* Frameworks */,
 				3B28393E2511EAD700570EDF /* Resources */,
-				EFBE4816BB48A443A7A1BB57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DemoCovid;
+			packageProductDependencies = (
+				3B1471FB2514E8BB0028C1CE /* Charts */,
+				3B1471FE2514E8FC0028C1CE /* SwiftyJSON */,
+				3B1472012514E9690028C1CE /* Alamofire */,
+			);
 			productName = DemoCovid;
 			productReference = 3B2839402511EAD700570EDF /* DemoCovid.app */;
 			productType = "com.apple.product-type.application";
@@ -226,7 +236,6 @@
 				3B28395D2511EAFF00570EDF /* Sources */,
 				3B28395E2511EAFF00570EDF /* Frameworks */,
 				3B28395F2511EAFF00570EDF /* Resources */,
-				F8289CFFC30F61F62CC91204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +279,11 @@
 				Base,
 			);
 			mainGroup = 3B2839372511EAD600570EDF;
+			packageReferences = (
+				3B1471FA2514E8BB0028C1CE /* XCRemoteSwiftPackageReference "Charts" */,
+				3B1471FD2514E8FC0028C1CE /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				3B1472002514E9690028C1CE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3B2839412511EAD700570EDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -373,40 +387,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFBE4816BB48A443A7A1BB57 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoCovid/Pods-DemoCovid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoCovid/Pods-DemoCovid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoCovid/Pods-DemoCovid-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8289CFFC30F61F62CC91204 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -750,6 +730,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B1471FA2514E8BB0028C1CE /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.0;
+			};
+		};
+		3B1471FD2514E8FC0028C1CE /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3B1472002514E9690028C1CE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B1471FB2514E8BB0028C1CE /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1471FA2514E8BB0028C1CE /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		3B1471FE2514E8FC0028C1CE /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1471FD2514E8FC0028C1CE /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		3B1472012514E9690028C1CE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1472002514E9690028C1CE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B2839382511EAD600570EDF /* Project object */;
 }

@@ -8,26 +8,57 @@
 
 import UIKit
 import Charts
+
 class BarChartViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var barChartView: BarChartView!
-    var users = [CovidData]()
+    var getPositive = ""
+    var getState = ""
+    var getNegative = ""
+    var dataArray = [CovidData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        barChartView.delegate = self
+
+        loadData()
     }
-    override func viewDidLayoutSubviews() {
-        barChartView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
-        barChartView.center = view.center
-        view.addSubview(barChartView)
+    func loadData() {
+        var xAxisArray = [Double]()
+        var yAxisArray = [Double]()
         
-        var entries = [BarChartDataEntry]()
-        
-        for x in 0..<10 {
-            entries.append(BarChartDataEntry(x: Double(x), y: Double(x)))
+        for data in dataArray {
+            let xData = Double(data.state) ?? 0.0
+            let yData = Double(data.positive) ?? 0.0
+            xAxisArray.append((xData))
+            yAxisArray.append(yData)
         }
-        let set = BarChartDataSet(entries: entries)
-        set.colors = ChartColorTemplates.joyful()
-        let data = BarChartData(dataSet: set)
-        barChartView.data = data
+        var dataEntries: [BarChartDataEntry] = []
+                              for i in 0..<getState.count {
+                                  let dataEntry = BarChartDataEntry(x: Double(xAxisArray[i]), y: Double(yAxisArray[i]))
+                                  
+                                  dataEntries.append(dataEntry)
+                              }
+                              
+                              let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Covid Count")
+                              let chartData = BarChartData(dataSet: chartDataSet)
+                              
+                              barChartView.data = chartData
     }
-}
+        func setChart() {
+            let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+            let test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+            
+            var dataEntries: [BarChartDataEntry] = []
+            
+            for i in 0..<getState.count
+           {
+                let dataEntry = BarChartDataEntry(x: Double(test[i]), y: Double(unitsSold[i]))
+                
+                dataEntries.append(dataEntry)
+            }
+            
+            let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Covid Count")
+            let chartData = BarChartData(dataSet: chartDataSet)
+            
+            barChartView.data = chartData
+        }
+    }

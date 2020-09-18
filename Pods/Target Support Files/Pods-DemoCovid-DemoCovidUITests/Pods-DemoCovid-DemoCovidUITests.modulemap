@@ -1,6 +1,0 @@
-framework module Pods_DemoCovid_DemoCovidUITests {
-  umbrella header "Pods-DemoCovid-DemoCovidUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
