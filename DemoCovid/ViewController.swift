@@ -50,8 +50,8 @@ class ViewController: UIViewController {
                         print("Data",error)
                     }
             }
-        }
     }
+}
 }
 //MARK: - UITableViewDelegate
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -83,3 +83,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150F379DF3593D5723839A0D /* Pods_DemoCovidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCDA70C05887DD1B8472B58 /* Pods_DemoCovidTests.framework */; };
-		3B1471FC2514E8BB0028C1CE /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1471FB2514E8BB0028C1CE /* Charts */; };
-		3B1471FF2514E8FC0028C1CE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1471FE2514E8FC0028C1CE /* SwiftyJSON */; };
-		3B1472022514E9690028C1CE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1472012514E9690028C1CE /* Alamofire */; };
+		08B28C9B5DD4EA3D8573E1C0 /* Pods_DemoCovidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3B99777B9FFD88E9CA704E /* Pods_DemoCovidTests.framework */; };
+		3B1471FC2514E8BB0028C1CE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1471FB2514E8BB0028C1CE /* SwiftPackageProductDependency */; };
+		3B1471FF2514E8FC0028C1CE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1471FE2514E8FC0028C1CE /* SwiftPackageProductDependency */; };
+		3B1472022514E9690028C1CE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1472012514E9690028C1CE /* SwiftPackageProductDependency */; };
 		3B2839442511EAD700570EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839432511EAD700570EDF /* AppDelegate.swift */; };
 		3B2839462511EAD700570EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839452511EAD700570EDF /* SceneDelegate.swift */; };
 		3B2839482511EAD700570EDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839472511EAD700570EDF /* ViewController.swift */; };
@@ -22,8 +22,8 @@
 		3B2839742511F62500570EDF /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839732511F62500570EDF /* CovidData.swift */; };
 		3B2839762511FA6B00570EDF /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839752511FA6B00570EDF /* CategoryTableViewCell.swift */; };
 		3B2839782512412600570EDF /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2839772512412600570EDF /* BarChartViewController.swift */; };
-		3F2665112B488979C4857B93 /* Pods_DemoCovid_DemoCovidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142B0B6B0264AD32ECBDFAB2 /* Pods_DemoCovid_DemoCovidUITests.framework */; };
-		D3E7497660205CFB735CE2EC /* Pods_DemoCovid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828C00A3F7A99282331E6CF4 /* Pods_DemoCovid.framework */; };
+		79D7798F355EC0BA0930C14D /* Pods_DemoCovid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBB8B27580EB944B490DCCB /* Pods_DemoCovid.framework */; };
+		E586DBB61F30108F2F960EE7 /* Pods_DemoCovid_DemoCovidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7FC443547C7C9BBF8E863C /* Pods_DemoCovid_DemoCovidUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		142B0B6B0264AD32ECBDFAB2 /* Pods_DemoCovid_DemoCovidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCovid_DemoCovidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B1AE557EB715D99D2252E54 /* Pods-DemoCovidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovidTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoCovidTests/Pods-DemoCovidTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B2839402511EAD700570EDF /* DemoCovid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCovid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06766B290092B90469F37125 /* Pods-DemoCovidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovidTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoCovidTests/Pods-DemoCovidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		076E641749538CD30E845180 /* Pods-DemoCovid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid.debug.xcconfig"; path = "Target Support Files/Pods-DemoCovid/Pods-DemoCovid.debug.xcconfig"; sourceTree = "<group>"; };
+		3B2839402511EAD700570EDF /* DemoCovid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DemoCovid.app; path = "/Users/karthikrajant/Desktop/untitled folder/DemoCovid/DemoApplicaion2020/build/Debug-iphoneos/DemoCovid.app"; sourceTree = "<absolute>"; };
 		3B2839432511EAD700570EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B2839452511EAD700570EDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3B2839472511EAD700570EDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,22 +54,22 @@
 		3B28394C2511EAFD00570EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B28394F2511EAFD00570EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B2839512511EAFD00570EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B2839562511EAFF00570EDF /* DemoCovidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCovidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2839562511EAFF00570EDF /* DemoCovidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DemoCovidTests.xctest; path = "/Users/karthikrajant/Desktop/untitled folder/DemoCovid/DemoApplicaion2020/build/Debug-iphoneos/DemoCovidTests.xctest"; sourceTree = "<absolute>"; };
 		3B28395A2511EAFF00570EDF /* DemoCovidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCovidTests.swift; sourceTree = "<group>"; };
 		3B28395C2511EAFF00570EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B2839612511EAFF00570EDF /* DemoCovidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCovidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2839612511EAFF00570EDF /* DemoCovidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DemoCovidUITests.xctest; path = "/Users/karthikrajant/Desktop/untitled folder/DemoCovid/DemoApplicaion2020/build/Debug-iphoneos/DemoCovidUITests.xctest"; sourceTree = "<absolute>"; };
 		3B2839652511EAFF00570EDF /* DemoCovidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCovidUITests.swift; sourceTree = "<group>"; };
 		3B2839672511EAFF00570EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B2839732511F62500570EDF /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
 		3B2839752511FA6B00570EDF /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		3B2839772512412600570EDF /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
-		3BCDA70C05887DD1B8472B58 /* Pods_DemoCovidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCovidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FA63A23EF1BD9CAF96DC12B /* Pods-DemoCovid-DemoCovidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid-DemoCovidUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests.release.xcconfig"; sourceTree = "<group>"; };
-		427D87356DF6B484E7BA6A0F /* Pods-DemoCovid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid.release.xcconfig"; path = "Target Support Files/Pods-DemoCovid/Pods-DemoCovid.release.xcconfig"; sourceTree = "<group>"; };
-		4E8926D3647A33164947122C /* Pods-DemoCovid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid.debug.xcconfig"; path = "Target Support Files/Pods-DemoCovid/Pods-DemoCovid.debug.xcconfig"; sourceTree = "<group>"; };
-		828C00A3F7A99282331E6CF4 /* Pods_DemoCovid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCovid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C650DF74A6D54663C2C9F347 /* Pods-DemoCovid-DemoCovidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid-DemoCovidUITests.debug.xcconfig"; path = "Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CBB6C5689AC429BBE5944CB0 /* Pods-DemoCovidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovidTests.release.xcconfig"; path = "Target Support Files/Pods-DemoCovidTests/Pods-DemoCovidTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F0435A06875BD1C12C9D10F /* Pods-DemoCovid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid.release.xcconfig"; path = "Target Support Files/Pods-DemoCovid/Pods-DemoCovid.release.xcconfig"; sourceTree = "<group>"; };
+		6598D57E25916E43720EA61C /* Pods-DemoCovidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovidTests.release.xcconfig"; path = "Target Support Files/Pods-DemoCovidTests/Pods-DemoCovidTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F7585A9F5976925B6B818ED /* Pods-DemoCovid-DemoCovidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid-DemoCovidUITests.debug.xcconfig"; path = "Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7FC443547C7C9BBF8E863C /* Pods_DemoCovid_DemoCovidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCovid_DemoCovidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBB8B27580EB944B490DCCB /* Pods_DemoCovid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCovid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3B99777B9FFD88E9CA704E /* Pods_DemoCovidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCovidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95297D3B88C0DC6809A8300 /* Pods-DemoCovid-DemoCovidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCovid-DemoCovidUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoCovid-DemoCovidUITests/Pods-DemoCovid-DemoCovidUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1471FF2514E8FC0028C1CE /* SwiftyJSON in Frameworks */,
-				3B1472022514E9690028C1CE /* Alamofire in Frameworks */,
-				D3E7497660205CFB735CE2EC /* Pods_DemoCovid.framework in Frameworks */,
-				3B1471FC2514E8BB0028C1CE /* Charts in Frameworks */,
+				3B1471FF2514E8FC0028C1CE /* BuildFile in Frameworks */,
+				3B1472022514E9690028C1CE /* BuildFile in Frameworks */,
+				3B1471FC2514E8BB0028C1CE /* BuildFile in Frameworks */,
+				79D7798F355EC0BA0930C14D /* Pods_DemoCovid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150F379DF3593D5723839A0D /* Pods_DemoCovidTests.framework in Frameworks */,
+				08B28C9B5DD4EA3D8573E1C0 /* Pods_DemoCovidTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F2665112B488979C4857B93 /* Pods_DemoCovid_DemoCovidUITests.framework in Frameworks */,
+				E586DBB61F30108F2F960EE7 /* Pods_DemoCovid_DemoCovidUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,20 +109,9 @@
 				3B2839422511EAD700570EDF /* DemoCovid */,
 				3B2839592511EAFF00570EDF /* DemoCovidTests */,
 				3B2839642511EAFF00570EDF /* DemoCovidUITests */,
-				3B2839412511EAD700570EDF /* Products */,
-				E96736BC14B111ED838CCD38 /* Pods */,
-				7F7A64F92970EDAC63FCAC63 /* Frameworks */,
+				D1D011AA81180EE3E487B9A7 /* Pods */,
+				4F4D4F72F2F4A038E91E1CF9 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		3B2839412511EAD700570EDF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3B2839402511EAD700570EDF /* DemoCovid.app */,
-				3B2839562511EAFF00570EDF /* DemoCovidTests.xctest */,
-				3B2839612511EAFF00570EDF /* DemoCovidUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3B2839422511EAD700570EDF /* DemoCovid */ = {
@@ -160,26 +149,27 @@
 			path = DemoCovidUITests;
 			sourceTree = "<group>";
 		};
-		7F7A64F92970EDAC63FCAC63 /* Frameworks */ = {
+		4F4D4F72F2F4A038E91E1CF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				828C00A3F7A99282331E6CF4 /* Pods_DemoCovid.framework */,
-				142B0B6B0264AD32ECBDFAB2 /* Pods_DemoCovid_DemoCovidUITests.framework */,
-				3BCDA70C05887DD1B8472B58 /* Pods_DemoCovidTests.framework */,
+				9CBB8B27580EB944B490DCCB /* Pods_DemoCovid.framework */,
+				8E7FC443547C7C9BBF8E863C /* Pods_DemoCovid_DemoCovidUITests.framework */,
+				BF3B99777B9FFD88E9CA704E /* Pods_DemoCovidTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E96736BC14B111ED838CCD38 /* Pods */ = {
+		D1D011AA81180EE3E487B9A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4E8926D3647A33164947122C /* Pods-DemoCovid.debug.xcconfig */,
-				427D87356DF6B484E7BA6A0F /* Pods-DemoCovid.release.xcconfig */,
-				C650DF74A6D54663C2C9F347 /* Pods-DemoCovid-DemoCovidUITests.debug.xcconfig */,
-				3FA63A23EF1BD9CAF96DC12B /* Pods-DemoCovid-DemoCovidUITests.release.xcconfig */,
-				3B1AE557EB715D99D2252E54 /* Pods-DemoCovidTests.debug.xcconfig */,
-				CBB6C5689AC429BBE5944CB0 /* Pods-DemoCovidTests.release.xcconfig */,
+				076E641749538CD30E845180 /* Pods-DemoCovid.debug.xcconfig */,
+				3F0435A06875BD1C12C9D10F /* Pods-DemoCovid.release.xcconfig */,
+				6F7585A9F5976925B6B818ED /* Pods-DemoCovid-DemoCovidUITests.debug.xcconfig */,
+				F95297D3B88C0DC6809A8300 /* Pods-DemoCovid-DemoCovidUITests.release.xcconfig */,
+				06766B290092B90469F37125 /* Pods-DemoCovidTests.debug.xcconfig */,
+				6598D57E25916E43720EA61C /* Pods-DemoCovidTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,9 +191,9 @@
 			);
 			name = DemoCovid;
 			packageProductDependencies = (
-				3B1471FB2514E8BB0028C1CE /* Charts */,
-				3B1471FE2514E8FC0028C1CE /* SwiftyJSON */,
-				3B1472012514E9690028C1CE /* Alamofire */,
+				3B1471FB2514E8BB0028C1CE /* SwiftPackageProductDependency */,
+				3B1471FE2514E8FC0028C1CE /* SwiftPackageProductDependency */,
+				3B1472012514E9690028C1CE /* SwiftPackageProductDependency */,
 			);
 			productName = DemoCovid;
 			productReference = 3B2839402511EAD700570EDF /* DemoCovid.app */;
@@ -280,11 +270,11 @@
 			);
 			mainGroup = 3B2839372511EAD600570EDF;
 			packageReferences = (
-				3B1471FA2514E8BB0028C1CE /* XCRemoteSwiftPackageReference "Charts" */,
-				3B1471FD2514E8FC0028C1CE /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				3B1472002514E9690028C1CE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3B1471FA2514E8BB0028C1CE /* RemoteSwiftPackageReference */,
+				3B1471FD2514E8FC0028C1CE /* RemoteSwiftPackageReference */,
+				3B1472002514E9690028C1CE /* RemoteSwiftPackageReference */,
 			);
-			productRefGroup = 3B2839412511EAD700570EDF /* Products */;
+			productRefGroup = 3B2839372511EAD600570EDF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -572,7 +562,7 @@
 		};
 		3B28396B2511EAFF00570EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E8926D3647A33164947122C /* Pods-DemoCovid.debug.xcconfig */;
+			baseConfigurationReference = 076E641749538CD30E845180 /* Pods-DemoCovid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,7 +580,7 @@
 		};
 		3B28396C2511EAFF00570EDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 427D87356DF6B484E7BA6A0F /* Pods-DemoCovid.release.xcconfig */;
+			baseConfigurationReference = 3F0435A06875BD1C12C9D10F /* Pods-DemoCovid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -608,7 +598,7 @@
 		};
 		3B28396E2511EAFF00570EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B1AE557EB715D99D2252E54 /* Pods-DemoCovidTests.debug.xcconfig */;
+			baseConfigurationReference = 06766B290092B90469F37125 /* Pods-DemoCovidTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,7 +620,7 @@
 		};
 		3B28396F2511EAFF00570EDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBB6C5689AC429BBE5944CB0 /* Pods-DemoCovidTests.release.xcconfig */;
+			baseConfigurationReference = 6598D57E25916E43720EA61C /* Pods-DemoCovidTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -652,7 +642,7 @@
 		};
 		3B2839712511EAFF00570EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C650DF74A6D54663C2C9F347 /* Pods-DemoCovid-DemoCovidUITests.debug.xcconfig */;
+			baseConfigurationReference = 6F7585A9F5976925B6B818ED /* Pods-DemoCovid-DemoCovidUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,7 +662,7 @@
 		};
 		3B2839722511EAFF00570EDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FA63A23EF1BD9CAF96DC12B /* Pods-DemoCovid-DemoCovidUITests.release.xcconfig */;
+			baseConfigurationReference = F95297D3B88C0DC6809A8300 /* Pods-DemoCovid-DemoCovidUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -732,7 +722,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3B1471FA2514E8BB0028C1CE /* XCRemoteSwiftPackageReference "Charts" */ = {
+		3B1471FA2514E8BB0028C1CE /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts";
 			requirement = {
@@ -740,7 +730,7 @@
 				minimumVersion = 3.5.0;
 			};
 		};
-		3B1471FD2514E8FC0028C1CE /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		3B1471FD2514E8FC0028C1CE /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
 			requirement = {
@@ -748,7 +738,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		3B1472002514E9690028C1CE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		3B1472002514E9690028C1CE /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -759,19 +749,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3B1471FB2514E8BB0028C1CE /* Charts */ = {
+		3B1471FB2514E8BB0028C1CE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3B1471FA2514E8BB0028C1CE /* XCRemoteSwiftPackageReference "Charts" */;
+			package = 3B1471FA2514E8BB0028C1CE /* RemoteSwiftPackageReference */;
 			productName = Charts;
 		};
-		3B1471FE2514E8FC0028C1CE /* SwiftyJSON */ = {
+		3B1471FE2514E8FC0028C1CE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3B1471FD2514E8FC0028C1CE /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = 3B1471FD2514E8FC0028C1CE /* RemoteSwiftPackageReference */;
 			productName = SwiftyJSON;
 		};
-		3B1472012514E9690028C1CE /* Alamofire */ = {
+		3B1472012514E9690028C1CE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3B1472002514E9690028C1CE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 3B1472002514E9690028C1CE /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
